@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #01</title>
+    <style>
+        /* 
+            absolutos -> px, cm, mm, ...
+
+            viewport -> vh, vw, vmin, vmax (maior e menor dimensão, respectivamente)
+
+            font -> rem (baseada na fonte raiz da aplicação), em (baseada na font do pai), ...
+
+            percentual -> caso especial
+        */
+
+        .unidades-absolutas{
+            position: absolute;
+            font-size: 40px;
+            padding: 20px;
+            border: solid 5px #222;
+            margin: 30px;
+            width: 4cm; /* Pouco utilizado */
+            height: 20mm; /* Pouco utilizado */
+            top: 150px; /* Só levou em consideração o top e o left por conta do position: absolute */
+            left: 200px;
+        }
+
+        .unidades-relativas{
+            position: absolute;
+            font-size: 4em;
+            padding: 5%;
+            border: solid 1vw #222;
+            margin: .8%;
+            width: 20vw;
+            height: 15vh;
+            bottom: calc(50% - 7.5vh);
+            right: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="unidades-absolutas">Opa!</div>
+    <div class="unidades-relativas">Epa!</div>
+</body>
+
+</html>
